@@ -20,10 +20,13 @@ import { TableComponent } from './table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
-  declarations: [AddressFormComponent, SchematicsComponent, NavigationComponent, TableComponent],
+  declarations: [AddressFormComponent, SchematicsComponent, NavigationComponent, TableComponent, DashboardComponent],
   imports: [
     CommonModule,
     SchematicsRoutingModule,
@@ -40,7 +43,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatListModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatGridListModule,
+    MatMenuModule
   ]
 })
 export class SchematicsModule { }
