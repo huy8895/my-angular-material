@@ -16,10 +16,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import {NavigationComponent} from "./navigation/navigation.component";
+import { TableComponent } from './table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
-  declarations: [AddressFormComponent, SchematicsComponent, NavigationComponent],
+  declarations: [AddressFormComponent, SchematicsComponent, NavigationComponent, TableComponent],
   imports: [
     CommonModule,
     SchematicsRoutingModule,
@@ -33,7 +37,10 @@ import {NavigationComponent} from "./navigation/navigation.component";
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ]
 })
 export class SchematicsModule { }
