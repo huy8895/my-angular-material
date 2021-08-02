@@ -23,10 +23,12 @@ import { MatSortModule } from '@angular/material/sort';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import { TreeComponent } from './tree/tree.component';
+import { MatTreeModule } from '@angular/material/tree';
 
 
 @NgModule({
-  declarations: [AddressFormComponent, SchematicsComponent, NavigationComponent, TableComponent, DashboardComponent],
+  declarations: [AddressFormComponent, SchematicsComponent, NavigationComponent, TableComponent, DashboardComponent, TreeComponent],
   imports: [
     CommonModule,
     SchematicsRoutingModule,
@@ -45,7 +47,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatPaginatorModule,
     MatSortModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTreeModule
   ]
 })
 export class SchematicsModule { }

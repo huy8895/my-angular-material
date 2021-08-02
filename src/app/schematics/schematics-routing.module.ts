@@ -5,6 +5,7 @@ import {AddressFormComponent} from "./address-form/address-form.component";
 import {NavigationComponent} from "./navigation/navigation.component";
 import {TableComponent} from "./table/table.component";
 import {DashboardComponent} from "./dashboard/dashboard.component";
+import {TreeComponent} from "./tree/tree.component";
 
 const routes: Routes = [
   {
@@ -26,6 +27,11 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent
+      }
+      ,
+      {
+        path: 'tree',
+        component: TreeComponent
       }
     ]
   }
