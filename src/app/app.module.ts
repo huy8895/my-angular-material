@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatSliderModule } from '@angular/material/slider'
-import {MySchematicsModule} from "./my-schematics/my-schematics.module";
 import { AppRoutingModule } from './app-routing.module';
 import {RouterModule} from "@angular/router";
+import {SchematicsModule} from "./schematics/schematics.module";
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import {RouterModule} from "@angular/router";
     BrowserModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    MySchematicsModule,
+    SchematicsModule,
     AppRoutingModule,
     RouterModule
   ],

@@ -6,7 +6,7 @@ import {RouterModule, Routes} from "@angular/router";
 const routes: Routes = [
   {
     path: 'schematics',
-    loadChildren: () => import('./my-schematics/my-schematics.module').then(m => m.MySchematicsModule)
+    loadChildren: () => import('./schematics/schematics.module').then(m => m.SchematicsModule)
   }
 ];
 
