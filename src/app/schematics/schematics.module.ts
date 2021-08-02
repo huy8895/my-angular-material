@@ -25,10 +25,12 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { TreeComponent } from './tree/tree.component';
 import { MatTreeModule } from '@angular/material/tree';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 @NgModule({
-  declarations: [AddressFormComponent, SchematicsComponent, NavigationComponent, TableComponent, DashboardComponent, TreeComponent],
+  declarations: [AddressFormComponent, SchematicsComponent, NavigationComponent, TableComponent, DashboardComponent, TreeComponent, DragDropComponent],
   imports: [
     CommonModule,
     SchematicsRoutingModule,
@@ -48,7 +50,8 @@ import { MatTreeModule } from '@angular/material/tree';
     MatSortModule,
     MatGridListModule,
     MatMenuModule,
-    MatTreeModule
+    MatTreeModule,
+    DragDropModule
   ]
 })
 export class SchematicsModule { }
