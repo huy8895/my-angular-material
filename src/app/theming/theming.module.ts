@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { ThemingRoutingModule } from './theming-routing.module';
 import { ThemingComponent } from './theming.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 @NgModule({
   declarations: [
-    ThemingComponent
+    ThemingComponent,
+    ToolbarComponent
   ],
   imports: [
     CommonModule,
