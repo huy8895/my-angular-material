@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: () => import('./schematics/schematics.module').then(m => m.SchematicsModule)
   },
   {
+    path: 'theming',
+    loadChildren: () => import('./theming/theming.module').then(m => m.ThemingModule)
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full'

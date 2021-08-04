@@ -1,7 +1,16 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {ThemingComponent} from "./theming.component";
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: ThemingComponent,
+    children: [
+
+    ]
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
