@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ThemingRoutingModule } from './theming-routing.module';
 import { ThemingComponent } from './theming.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import {MaterialModule} from "../material/material.module";
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
   ],
   imports: [
     CommonModule,
-    ThemingRoutingModule
+    ThemingRoutingModule,
+    MaterialModule
   ]
 })
 export class ThemingModule { }
