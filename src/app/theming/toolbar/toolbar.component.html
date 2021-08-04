@@ -3,7 +3,17 @@
     <mat-icon>menu</mat-icon>
   </button>
   <button mat-flat-button color="primary">My App</button>
-  <button mat-flat-button color="primary"> Theme </button>
+  <button [matMenuTriggerFor]="Theme"
+          mat-icon-button="" aria-label="Select a theme"
+          matTooltip="Select a theme for the documentation">
+    <mat-icon role="img" class="mat-icon notranslate material-icons mat-icon-no-color"
+              data-mat-icon-type="font">format_color_fill
+    </mat-icon>
+  </button>
+  <mat-menu #Theme="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
   <span class="example-spacer"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
